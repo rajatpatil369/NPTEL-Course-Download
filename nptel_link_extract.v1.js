@@ -5,6 +5,8 @@ if (document.title.includes(' - Course')) {
     file_name = document.title.split(' - Course')[0] + '.sh';
 } else if (document.title.includes(' - - Unit')) {
     file_name = document.title.split(' - - Unit')[0] + '.sh';
+} else if (document.title.includes(' - - Announcements')) {
+    file_name = document.title.split(' - - Announcements')[0] + '.sh';
 } else {
     throw new Error('Unexpected condition: `document.title` is NOT in the expected format.');
 }
