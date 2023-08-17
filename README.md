@@ -5,7 +5,7 @@ A helper JavaScript program to download NPTEL courses.
 ## Dependencies
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
-**Note:** The course content must have been released in order for you to make use of this script.
+**Note:** The course content must have been released in order for you to make use of this script. The script will work even if only one week's content is released.
 
 ## Usage
 1. Navigate to the course website.
@@ -15,6 +15,6 @@ A helper JavaScript program to download NPTEL courses.
 5. Press Enter.
 6. The script will generate a Linux bash script.
    - On Unix/Linux, you need to modify the execution permissions using `chmod u+x`.
-   - On Windows, you can rename the downloaded file's extension to `.bat` and run it in a command prompt.
+   - On Windows, rename the downloaded file's extension to `.bat`, replace all occurances of **%** (percent sign) to **%%** (double percent) within the file, and run it in a command prompt.
 
 **Note:** Make sure you have the necessary permissions and dependencies installed before running the script.
